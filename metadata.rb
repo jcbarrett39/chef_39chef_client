@@ -4,8 +4,10 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures 39chef_client'
 long_description 'Installs/Configures 39chef_client'
-version '0.1.0'
+version '0.1.2'
 chef_version '>= 12.1' if respond_to?(:chef_version)
+
+depends 'chef-client', '=8.1.8'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
